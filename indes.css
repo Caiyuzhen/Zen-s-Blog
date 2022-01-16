@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    column-gap: 20px;
+}
+
+.left-info {
+    padding-left: 200px;
+    width: 400px; 
+    float: left; 
+} 
+
+.right-info {
+    padding-right: 200px;
+    width: 680px; 
+    float: right; 
+    background: lightblue;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* 
+.wrap {display: flex; justify-content: space-between;}
+.left, .right, .middle {height: 100px;}
+.left {width: 200px; background: coral;}
+.right {width: 120px; background: lightblue;}
+.middle {background: #555; width: 100%; margin: 0 20px;} */
