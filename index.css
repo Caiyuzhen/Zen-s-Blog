@@ -1,0 +1,100 @@
+.body {
+    background: rgb(238, 235, 247);
+    color: rgb(24, 24, 24);
+}
+
+.pages-header{
+    display:flex;
+    justify-content: space-between;
+    padding:16px;
+    align-items: center;
+}
+
+.filter-container{
+    display: flex;
+    background: rgba(240, 240, 240, 0.5);
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 24px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.filter-option{
+    height:32px;
+    padding: 0 16px;
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+a{ 
+    text-decoration:none !important;
+    color:#262343 !important; 
+}
+
+
+
+.pages-GridContainer {
+    /* display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    column-gap: 20px; */
+    
+    /* column-width: 400px;
+    column-gap: 24px;
+    column-rule: 2px solid hsl(0dge, 0%, 30%); */
+    display:block;
+}
+
+.Grid-Container{
+    /* max-width: 100%; */
+    position: relative;
+    margin: 16px auto 0px;
+    /* column-width: 480px; */
+    /* column-gap: 20px;
+    column-rule: 2px solid hsl(0dge, 0%, 0%); */
+}
+
+.person-info {
+    width: 400px;
+    height: 280px;
+    padding: 46px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 32px;
+    box-shadow: 0px 8px 24px rgb(233, 233, 233);
+    background: rgb(255, 170, 144);
+    -webkit-font-smoothing: subpixel-antialiased;
+} 
+
+.my-zhihu {
+    width: 400px;
+    height: 280px;
+    padding: 46px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 32px;
+    box-shadow: 0px 8px 24px rgb(233, 233, 233);
+    background: lightblue;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.my-blog {
+    width: 400px;
+    height: 280px;
+    padding: 46px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 32px;
+    box-shadow: 0px 8px 24px rgb(233, 233, 233);
+    background: rgb(150, 228, 207);
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
