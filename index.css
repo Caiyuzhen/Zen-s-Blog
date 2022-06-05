@@ -1,31 +1,77 @@
 
+html {
+    margin:0;
+    padding:0;
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+  
 
 
-.body {
-    background: rgb(238, 235, 247);
+body {
+    /* background: rgb(238, 235, 247); */
     color: rgb(24, 24, 24);
-    display:flex;
     align-items:center;
     justify-content:center;
+    margin: 0;
+}
+
+.main-content{
+    display:flex;
 }
 
 
-
-.pages-header{
+#vanta-background {
     display:flex;
+    justify-content: space-around;
+    background-size:cover;
+    width: 100%;
+    top: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    padding:0;
+    margin:0;
+    /* align-items:stretch; */
+}
+
+
+.context-nav{
+    z-index: 12;
+}
+
+
+.pages-nav{
+    /* 固定顶部 */
+    position: fixed;
+    display:flex;
+    /* 👇左右两端对齐 */
     justify-content: space-between;
-    padding:16px;
     align-items: center;
+    padding-top: 1rem;
+    z-index: 10;
+    /* 👇撑满父元素！！ */
+    width: 100%;
+}
+
+.pages-logo > img{
+    border-radius:0.8rem;
+    /* 元素的最小间距 */
+    margin-right:0.25rem;
+    /* 👇右留有最小边距 */
+    margin-left: 2rem;
 }
 
 .filter-container{
     display: flex;
     background: rgba(240, 240, 240, 0.5);
     font-size: 14px;
-    padding: 6px;
     border-radius: 24px;
     flex-wrap: nowrap;
     align-items: center;
+    padding: 0.5rem;
+    /* 元素的最小间距 */
+    margin-left:0.5rem;
+    margin-right:0.5rem;
 }
 
 .filter-option{
@@ -36,50 +82,68 @@
     font-weight: 600;
 }
 
+.txt-content{
+    color: #ffffff;
+    font-weight: 600;
+    /* 元素的最小间距 */
+    margin-left:0.5rem;
+    /* 👇右留有最小边距 */
+    margin-right: 2rem;
+}
+
+
+/* 👇所有超链接的样式 */
 a{ 
+    cursor: pointer;
     text-decoration:none !important;
     color:#262343 !important; 
+}
+
+.main-content{
+    margin: 0;
+    padding: 0;
 }
 
 
 
 .pages-GridContainer {
-    /* display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    column-gap: 20px; */
-    
+    z-index: 2;
+    /* overflow-y:scroll; */
+    /* /* display: flex; */
+    /* justify-content: space-between; */
+    /* margin: 0 auto; */
     /* column-width: 400px;
     column-gap: 24px;
     column-rule: 2px solid hsl(0dge, 0%, 30%); */
     /* display:flex; */
     /* align-items:center; */
     /* justify-content:center; */
-
 }
 
 .Grid-Container{
     /* max-width: 100%; */
-    overflow-x: hidden;
+    /* overflow-y: hidden; */
     position: relative;
-    margin: 16px auto 0px;
+    margin: 6rem auto 0rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    z-index: 3;
+    /* overflow:scroll; */
     /* column-width: 480px; */
     /* column-gap: 20px;
     column-rule: 2px solid hsl(0dge, 0%, 0%); */
 }
 
 .person-info{
-    width: 400px;
+    width: 348px;
     height: 280px;
     padding: 46px;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     border-radius: 32px;
     box-shadow: 0px 8px 24px rgb(35, 28, 60);
@@ -88,12 +152,12 @@ a{
 } 
 
 .my-zhihu {
-    width: 400px;
+    width: 348px;
     height: 280px;
     padding: 46px;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     border-radius: 32px;
     box-shadow: 0px 8px 24px rgb(35, 28, 60);
@@ -102,12 +166,12 @@ a{
 }
 
 .my-blog {
-    width: 400px;
+    width: 348px;
     height: 280px;
     padding: 46px;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     border-radius: 32px;
     box-shadow: 0px 8px 24px rgb(35, 28, 60);
@@ -116,26 +180,15 @@ a{
 }
 
 .my-work {
-    width: 400px;
+    width: 348px;
     height: 280px;
     padding: 46px;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     border-radius: 32px;
     box-shadow: 0px 8px 24px rgb(35, 28, 60);
     background: rgb(215, 150, 228);
     -webkit-font-smoothing: subpixel-antialiased;
 }
-
-
-#vanta-background {
-    background-size:cover;
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    top: 0;
-    z-index: -1;
-}
-
